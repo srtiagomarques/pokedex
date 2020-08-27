@@ -5,12 +5,23 @@
 ## Angular ##
 # compiled output
 dist/
+/dist
 tmp/
+/tmp
 app/**/*.js
 app/**/*.js.map
+/out-tsc
+
+# Only exists if Bazel was run
+/bazel-out
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
 
 # dependencies
 node_modules/
+/node_modules
 bower_components/
 
 # IDEs and editors
@@ -18,12 +29,18 @@ bower_components/
 
 # misc
 .sass-cache/
+/.sass-cache
 connect.lock/
+/connect.lock
 coverage/
+/coverage
 libpeerconnection.log/
+/libpeerconnection.log
 npm-debug.log
+yarn-error.log
 testem.log
 typings/
+/typings
 
 # e2e
 e2e/*.js
@@ -31,6 +48,7 @@ e2e/*.map
 
 # System Files
 .DS_Store/
+Thumbs.db
 
 ### Node ###
 # Logs
@@ -137,6 +155,15 @@ dist
 
 # TernJS port file
 .tern-port
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
