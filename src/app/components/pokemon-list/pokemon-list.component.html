@@ -1,0 +1,13 @@
+<!-- <pre>
+  {{ pokeJson | any }}
+</pre> -->
+
+<div *ngFor="let p of pokeJson">
+
+  <li>
+    <img class="card-image" alt="p.name" src="https://pokeres.bastionbot.org/images/pokemon/1.png">
+    <h2 class="card-title">{{p.id}} {{p.name}}</h2>
+    <p class="card-subtitle">{{p.types}}</p>
+  </li>
+
+</div>
